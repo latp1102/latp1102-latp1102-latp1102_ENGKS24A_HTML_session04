@@ -5,47 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body bgcolor="lightgray" >
-    <table>
-        <form action="">
-            <div>
-                <tr>
-                    <td>First Name</td>
-                    <td><input id="firstName" type="fistName" name="firstName" placeholder="Your name.."></td>
-                </tr>
-            </div>
-            <br/>
-            <div>
-                <tr>
-                    <td>Last Name</td>
-                    <td><input id="lastName" type="lastName" name="lastName" placeholder="Your last name"></td>
-                </tr>
-            </div>
-            <br/>
-            <div>
-                <tr>
-                    <td>Country</td>
-                    <td><select name="" id="">
-                        <option value="USA">USA</option>
-                    </select></td>
-                </tr>
-            </div>
-            <br/>
-                <div>
-                    <tr>
-                        <td>Subject</td>
-                        <td><textarea name=""placeholder="write something.." id=""></textarea></td>
-                    </tr>
-                </div>
-            <br/>
-            <div>
-                <tr>
-                    <td align="right">
-                        <button type="submit" style="background-color: chartreuse;" >submit</button>
-                    </td>
-                </tr>
-            </div>
-        </form>
+<body>
+    <h1>CatPhotoApp</h1>
+    <h2>Cat Photos</h2>
+    <p>Everyone loves <a href="" style="color: blue;">cute cats</a>  </p>
+    <p>See more  <a href="" style="color: blue;">cat photos</a> in our gallery</p>
+    <img src="https://img-cache.coccoc.com/image2?i=2&l=30/313353401"
+    alt="">
+    <h2>Cat lists</h2>
+    <h3>Things cats love</h3>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <img src="https://cdn.tgdd.vn/2021/01/CookProduct/Tong-hop-15-cach-lam-trung-chien-ngon-don-gian-hap-dan-de-lam-cho-bua-com-1-1200x676.jpg" 
+    alt="">
+    <p>Cats love lasagna</p>
+    <h2>Top 3 things cats hate:</h2>
+    <ul>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ul>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKlUvtvmfeQJIQosII0SKTMOaDdye0SQpOV95qKsm3EelwxiGRyqs0GlEJA&s" 
+    alt=""><p>Cats <b>hate</b> other cats</p>
+    <p>Mèo thích lasagna</p>
+    <h2>Cat Breed</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Breed</th>
+                <th>Location</th>
+                <th>Type</th>
+                <th>Body type</th>
+                <th>Coat type and length</th>
+                <th>Coat pattern</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="">Abyssinian <sup>[8]</sup></a></td>
+                <td>Unspecifiled, but somewhere in Afro-Asia, likely 
+                    <a href="">Ethiopia <sup>[9]</sup></a>
+                </td>
+                <td>Natural</td>
+                <td>Semi-foreign</td>
+                <td>Short</td>
+                <td>Ticked tabby</td>
+                <td><img src="https://blog.maika.ai/wp-content/uploads/2024/02/anh-meo-meme-21.jpg"  height="100px"></td>
+            </tr>
+            <tr>
+                <td><a href="">Aegean</a></td>
+                <td>Greece</td>
+                <td>Natural</td>
+                <td>Moderate</td>
+                <td>Semi-long</td>
+                <td>Multi-color</td>
+                <td><img src="https://blog.maika.ai/wp-content/uploads/2024/02/anh-meo-meme-21.jpg" height="100px" alt=""></td>
+            </tr>
+            <tr>
+                <td><a href="">American Bobtall <sup>[10]</sup></a></td>
+                <td>United States</td>
+                <td>Mutation</td>
+                <td>Cobby</td>
+                <td>Semi-long</td>
+                <td>All</td>
+                <td><img src="https://blog.maika.ai/wp-content/uploads/2024/02/anh-meo-meme-21.jpg" height="100px" alt=""></td>
+            </tr>
+            <tr>
+                <td><a href="">American Curi <sup>[12]</sup></a></td>
+                <td>United States<a href=""><sup>[11]</sup></a></td>
+                <td>Mutation</td>
+                <td>Semi-foreign</td>
+                <td>Semi-long</td>
+                <td>All</td>
+                <td><img src="https://blog.maika.ai/wp-content/uploads/2024/02/anh-meo-meme-21.jpg" height="100px" alt=""></td>
+            </tr>
+            <tr>
+                <td><a href="">American Ringtall</a></td>
+                <td>United States<a href=""><sup>[11]</sup></a></td>
+                <td>Mutation</td>
+                <td>Foreign</td>
+                <td>Semi-long</td>
+                <td>All</td>
+                <td><img src="https://blog.maika.ai/wp-content/uploads/2024/02/anh-meo-meme-21.jpg" height="100px" alt=""></td>
+            </tr>
+        </tbody>
     </table>
+    <h2>Cat Form</h2>
+    <form action="">
+        <fieldset>
+            <legend>
+                Is your cat an indoor or outdoor cat?
+            </legend>
+            <input id="indoor" checked type="radio" name="indoor">Indoor
+            <input id="outdoor" checked type="radio" name="outdoor">Outdoor
+        </fieldset>
+        <fieldset>
+            <legend>
+                What's your cat's personality?
+            </legend>
+            <input id="loving" checked type="checkbox">loving
+            <input id="lazy" type="checkbox" name="lazy">lazy
+            <input id="energetic" type="checkbox" name="energetic">Energetic
+        </fieldset>
+        <input type="text" placeholder="cat photo URL">
+        <button>Submit</button>
+        <h4>No Copyright - <a href="">rikkei.edu.vn</a></h4>
+    </form>
 </body>
 </html>
